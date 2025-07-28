@@ -6,7 +6,7 @@
     DURATION: 10HR
     TRAINER: Shivakumar
   tasks: 
-  - name: print course information
+  - name: print course info
     vars:
       COURSE: Ansible
     ansible.builtin.debug:
