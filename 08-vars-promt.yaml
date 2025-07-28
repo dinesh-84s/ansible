@@ -1,0 +1,16 @@
+- name: varibales form promt
+  hosts: local
+  connection: local
+  vars_promt:
+  - name: USERNAME
+    promt: please enter the username
+    private: true
+
+  - name: PASSWORD
+    promt: please enter the Password 
+    private: true
+
+  tasks:
+  - name: print user information 
+    ansible.builtin.debug:
+      msg: "Hello username is {{ USERNAME }}, and Password is: {{ PASSWORD }}"
