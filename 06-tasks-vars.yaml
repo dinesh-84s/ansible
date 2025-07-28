@@ -6,9 +6,10 @@
     DURATION: 10HR
     TRAINER: Shivakumar
   tasks: 
-  -  name: print course information
-     vars: Ansible
-     ansible.builtin.debug:
+  - name: print course information
+    vars:
+      COURSE: Ansible
+    ansible.builtin.debug:
     #vars refernece should be surrounded by ("")
       msg: "Hello {{ COURSE }}, course Duration: {{ DURATION }}, Trainer is {{ TRAINER }}"
 
