@@ -5,9 +5,6 @@
     COURSE: DevOps with AWS
     DURATION: 10HR
     TRAINER: Shivakumar
-    COURSE: DevOps with Azure
-    DURATION: 10HR
-    TRAINER: Shivakumar
   tasks: 
   - name: print course info
     vars:
