@@ -8,7 +8,7 @@
     TOOLS: #LIST []
     - Linux
     - Shell
-    - ansible
+    - Ansible
     CONCEPTS: # MAP OR DIRECTORY OR OBJECT and its object reffered with {}
      CI: Jenkins 
      SCRIPTING: "Shell, ansible, python, Terraform"
