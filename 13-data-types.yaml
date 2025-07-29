@@ -6,13 +6,13 @@
     COURSE: "DevOps with AWS" # its a string
     IS_LIVE: true
     TOOLS: #LIST
-     -LINUX
-     -SHELL
+     -Linux
+     -Shell
      -ansible
     CONCEPTS: # MAP OR DIRECTORY OR OBJECT
      CI: Jenkins 
-     SCRIPTING: "SHELL,ANSIBLE,TERRAFORM,PYTHON"
-    Tasks:
+     SCRIPTING: "Shell, ansible, python, Terraform"
+  tasks:
      - name: print course information
        ansible.builtin.debug:
-        msg: "Course is {{ COURSE }}, Duration is {{ DURATION }} is live {{ IS_LIVE }}, Concepts is {{ CONCEPTS }} and tools are {{ TOOLS }}"
+        msg: "Course is: {{ COURSE }}, Duration is: {{ DURATION }} is live: {{ IS_LIVE }}, Concepts is: {{ CONCEPTS }} and tools are {{ TOOLS }}"
