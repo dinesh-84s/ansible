@@ -6,9 +6,9 @@
     COURSE: "DevOps with AWS" # its a string
     IS_LIVE: true # boolean
     TOOLS: #LIST []
-     -Linux
-     -Shell
-     -ansible
+    - Linux
+    - Shell
+    - ansible
     CONCEPTS: # MAP OR DIRECTORY OR OBJECT and its object reffered with {}
      CI: Jenkins 
      SCRIPTING: "Shell, ansible, python, Terraform"
