@@ -4,7 +4,7 @@
   vars:
     DURATION: 120 # ITS A DECIMAL
     COURSE: "DevOps with AWS" # its a string
-    IS LIVE: true
+    IS_LIVE: true
     TOOLS: #LIST
      -LINUX
      -SHELL
@@ -15,4 +15,4 @@
     Tasks:
      - name: print course information
        ansible.builtin.debug:
-        msg: course is {{ COURSE }}, Duration is {{ DURATION }} is live {{ IS LIVE }}, Concepts is {{ CONCEPTS }} and tools are {{ TOOLS }}
+        msg: course is {{ COURSE }}, Duration is {{ DURATION }} is live {{ IS_LIVE }}, Concepts is {{ CONCEPTS }} and tools are {{ TOOLS }}
