@@ -2,7 +2,7 @@
   hosts: local
   connection: local 
   vars:
-    DURATION: 120 # ITS A DECIMAL
+    DURATION: 120HRS # ITS A DECIMAL
     COURSE: "DevOps with AWS" # its a string
     IS_LIVE: true # boolean
     TOOLS: #LIST []
