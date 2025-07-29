@@ -12,6 +12,6 @@
   tasks:
     - name: primt the gretting 
       vars: 
-       GREETING: "Hello fRom TASK"
+       GREETING: "Hello from TASK"
       ansible.builtin.debug:
        msg: "{{ GREETING }}"
