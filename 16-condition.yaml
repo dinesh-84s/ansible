@@ -2,7 +2,7 @@
   hosts: frontend
   become: yes
   tasks:
-  - name: install nginx if Redhat
+  - name: install nginx for Redhat
     ansible.builtin.dnf:
       name: nginx
       state: present
