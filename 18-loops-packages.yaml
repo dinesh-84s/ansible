@@ -4,9 +4,10 @@
   tasks:
   - name: install packages
     ansible.buitlin.package:
-    name: "{{ item }}"
-    state: present
-  loop:
-  - mysql
-  - nginx
-  - zip
+      name: "{{ item }}"
+      state: present
+    loop:
+    - mysql
+    - nginx
+    - zip
+
