@@ -32,4 +32,8 @@
     ansible.builtin.debug:
       msg: "Course info is: {{ course | items2dict }}"
 
-
+  - name: convert to upper case
+    vars:
+      name: Dinesh Konda 
+    anisible.builtin.debug:
+      msh: "{{ name | upper }}" 
