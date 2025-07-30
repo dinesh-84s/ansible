@@ -10,5 +10,5 @@
 
 
   - name: print names
-    ansible.buitin.debug:
+    ansible.builtin.debug:
       msg: "Hello {{ persons }}"
