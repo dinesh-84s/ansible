@@ -34,6 +34,6 @@
 
   - name: convert to uppercase
     vars:
-      name: Dinesh Konda 
+      name: "Dinesh Konda" 
     anisible.builtin.debug:
       msg: "Hello{{ name | upper }}" 
