@@ -3,10 +3,11 @@
   become: yes
   tasks:
   - name: install packages
-    ansible.buitlin.package:
+    ansible.builtin.package:
       name: "{{ item }}"
       state: present
     loop:
     - mysql
     - nginx
     - zip
+
