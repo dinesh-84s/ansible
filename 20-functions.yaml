@@ -1,4 +1,4 @@
-- name: install function
+- name: functions
   hosts: local
   connection: local
   vars:
