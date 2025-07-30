@@ -36,4 +36,4 @@
     vars:
       name: Dinesh Konda 
     anisible.builtin.debug:
-      msh: "{{ name | upper }}" 
+      msg: "Hello{{ name | upper }}" 
