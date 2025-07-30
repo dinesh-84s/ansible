@@ -1,0 +1,9 @@
+- name: install function
+  hosts: local
+  connection: local
+  vars:
+    persons: "Ramesh,Suresh,Krishna,Dheeraj"
+  tasks:
+  - name: check undefined variables
+    ansible.builtin.debug:
+      msg: "Hello, {{ persons | default('Ramesh') }}
