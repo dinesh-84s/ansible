@@ -7,3 +7,8 @@
   - name: check undefined variables
     ansible.builtin.debug:
       msg: "Hello, {{ persons | default('Ramesh') }}"
+
+
+  - name: print functions
+    ansible.buitin.debug:
+      msg: "{{ persons }}"
