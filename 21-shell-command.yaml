@@ -2,7 +2,7 @@
   hosts: frontend
   tasks: 
   - name: redirect is output to file
-    ansible.builtin.shell: "lt -ltr > /tmp/output.txt"
+    ansible.builtin.shell: "ls -ltr > /tmp/output.txt"
     register: command_result
 
   - name: print the outcome
