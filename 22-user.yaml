@@ -16,3 +16,5 @@
     ansible.builtin.debug: 
       msg: "user already exist"
     when: output.rc == 0 #it means failure
+
+    
