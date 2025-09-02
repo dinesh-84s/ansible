@@ -10,7 +10,7 @@ hostnames:
 keyed_groups:
   # add hosts to tag_Name_value groups for each aws_ec2 host's tags.Name variable.
   - key: tags.Name
-    prefix: ""
+    prefix: "_"
     separator: ""
 compose:
   # This sets the `ansible_host` variable to connect with the private IP address without changing the hostname.
