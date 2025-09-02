@@ -1,0 +1,22 @@
+- name: craete route53 records
+  hosts: local 
+  connection: local
+  vars:
+    instances:
+    - mysql
+    - backend
+    - frontend
+    subnet_id: subnet-001dcc5c605285812
+    sg_id: sg-02ee33accb91fcb0a
+  tasks:
+  - name: create aws-ec2
+    ansible.aws-ec2.instance:
+      name: "{{ item }}"
+      vpc_subnet_id: "{{ subnet_id }}"
+      instane_type: t3.micro
+      security_group: "{{ sg_id }}"
+      image_id: ami-09c813fb71547fc4f
+      tags:
+        Name: "{{ item }}"
+    loop: "{{ instances }}"
+
